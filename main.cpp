@@ -5,7 +5,6 @@
 #include <ctime>
 #include <string>
 
-
 int main()
 {
     char enter;
