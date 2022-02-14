@@ -8,7 +8,7 @@
 int main()
 {
     char enter;
-    int* arr = new int[6];
+    int arr[6];
 
     std::cout << " If you are a collector, enter: + " << std::endl;
     std::cout << " If you are a user, enter: - " << std::endl;
@@ -44,6 +44,7 @@ int main()
             fileOut.write((const char*) arr, 7 * sizeof(int));
         }
         fileOut.close();
+
     }
     else
     {
@@ -58,7 +59,6 @@ int main()
         }
         else
         {
-            std::ifstream fileIn("banknotes.bin", std::ios::in | std::ios::binary);
             fileIn.read((char *) arr, 6 * sizeof(int));
             fileIn.close();
 
